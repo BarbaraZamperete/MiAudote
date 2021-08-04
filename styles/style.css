@@ -7,16 +7,18 @@ body{
 #banner{
     position: relative;
     background-image: url('../assets/backgroud-banner.jpg');
+    width: 100vw;
+    min-width: 640px;
     height: 400px;
     background-size: cover;
     background-position: center 80%;
-    align-items: center;
 }
 
 .navbar{
     position: absolute;
     top: 310px;
     width: 100%;
+    min-width: 640px;
     box-sizing: border-box;
     padding-left: 100px;
     padding-right: 100px;
@@ -29,24 +31,22 @@ body{
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
     background-color: #719360;
 }
 
-.site-title{
-    flex: 1;
-}
 nav ul {
     display: flex;
-    flex: 1;
-    justify-content: flex-end;
-
+    flex-direction: row;
 }
 
 nav li {
     list-style-type: none;
     margin-left: 40px;
-    font-size: 1.5em;
+    font-size: 1.5vw;
+    height: 100%;
+}
+nav li:hover{
+    background-color: #3e5c2f;
 }
 
 nav a {
@@ -65,13 +65,13 @@ section{
     align-items: center;
 }
 #title1{
-    font-size: 2.5em;
+    font-size: 2.5vw;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 #subtitle1{
     margin-top: 10px;
-    font-size: 1.3em;
+    font-size: 1.3vw;
     text-transform: lowercase;
     letter-spacing: 3px;
 }
