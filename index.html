@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
     <title>MiAudote - Home</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <div id="banner"></div>
     <nav class="navbar">
-        <div class="site-title">
+        <div class="logo">
             <a id="home" href="/"><img src="assets/logo-branca.png" alt=""></a>
         </div>
         <ul>
@@ -20,8 +22,10 @@
         </ul>
     </nav>
     <script>
-       // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () {
+            myFunction()
+        };
 
         // Get the navbar
         var navbar = document.querySelector(".navbar")
@@ -36,7 +40,7 @@
             } else {
                 navbar.classList.remove("sticky");
             }
-        }   
+        }
     </script>
     <section>
         <div id="title1">Adote um Amigo</div>
@@ -63,7 +67,8 @@
         <p>Lorem ipsum dolor sit amet.</p>
         <p>Lorem ipsum dolor sit amet.</p>
     </section>
-    
-    
+
+
 </body>
+
 </html>

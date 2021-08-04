@@ -1,10 +1,12 @@
-body{
+body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#banner{
+/*####### HEADER ###########################################*/
+#banner {
     position: relative;
     background-image: url('../assets/backgroud-banner.jpg');
     width: 100vw;
@@ -14,21 +16,21 @@ body{
     background-position: center 80%;
 }
 
-.navbar{
-    position: flex;
+.navbar {
     top: 310px;
     width: 100%;
-    min-width: 640px;
     height: 60px;
+    margin: auto;
+
     box-sizing: border-box;
-    padding-left: 100px;
-    padding-right: 100px;
+
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     background-color: rgba(51, 101, 27, 0.7);
     font-weight: lighter;
 }
+
 .sticky {
     position: fixed;
     top: 0;
@@ -36,8 +38,15 @@ body{
     border-bottom: 5px solid white;
 }
 
-.site-title{
+.logo {
     flex: 1;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+}
+#home {
+    height: 80%;
+    margin: auto;
 }
 nav ul {
     flex: 1;
@@ -50,14 +59,15 @@ nav ul {
 
 nav li {
     list-style-type: none;
-    font-size: 1.5vw;
+    font-size: 18px;
     width: 100%;
     height: 100%;
     display: inherit;
 }
-.menu:hover{
+
+.menu:hover {
     background-color: #3e5c2f;
-    
+
 }
 
 .menu {
@@ -69,43 +79,69 @@ nav li {
     align-items: center;
     justify-content: center;
 }
-nav img{
-    height: 50px;
+
+nav img {
+    height: 100%;
 }
 
-section{
+
+/*####### FILTRO DE PESQUISA ###########################################*/
+
+section {
     margin-top: 50px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
-#title1{
-    font-size: 2.5vw;
+
+#title1 {
+    font-size: 28px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-#subtitle1{
+
+#subtitle1 {
     margin-top: 10px;
-    font-size: 1.3vw;
+    font-size: 20px;
     text-transform: lowercase;
     letter-spacing: 3px;
 }
 
-#busca{
+#busca {
     margin-top: 50px;
     padding: 20px;
     height: 300px;
-    width: 800px;
+    width: 75%;
     border-radius: 20px;
     background-color: rgba(51, 101, 27, 0.7);
 }
 
-#busca form{
+#busca form {
     display: flex;
     flex-direction: row;
 }
-.row{
+
+.row {
     flex: 1;
     display: flex;
     flex-direction: column;
+}
+input{
+    width: 100%;
+}
+
+
+
+/*####### RESPONSIVIDADE ###########################################*/
+
+@media only screen and (max-width: 450px) {
+    #banner{
+        height: 250px;
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    #banner{
+        height: 250px;
+    }
 }
