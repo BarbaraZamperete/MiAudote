@@ -18,7 +18,7 @@ body {
 
 .navbar {
     top: 310px;
-    width: 100%;
+    width: 100vw;
     height: 60px;
     margin: auto;
 
@@ -47,6 +47,7 @@ body {
 #home {
     height: 80%;
     margin: auto;
+    margin-left: 10%;
 }
 nav ul {
     flex: 1;
@@ -80,7 +81,7 @@ nav li {
     justify-content: center;
 }
 
-nav img {
+#home img {
     height: 100%;
 }
 
