@@ -4,50 +4,54 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav {
+.navbar{
+    position: flex;
+    top: 310px;
+    width: 100%;
+    min-width: 640px;
+    height: 60px;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background-color: rgb(113, 147, 96);
+    background-color: rgba(51, 101, 27, 0.7);
     font-weight: lighter;
-    padding-right: 100px;
-    padding-left: 100px;
 }
 .site-title{
     flex: 1;
 }
 nav ul {
-    display: flex;
     flex: 1;
-    justify-content: flex-end;
-
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    height: inherit;
+    margin: 0px;
 }
 
 nav li {
     list-style-type: none;
-    margin-left: 40px;
-    font-size: 1.5em;
+    font-size: 1.5vw;
+    width: 100%;
+    height: 100%;
+    display: inherit;
+}
+.menu:hover{
+    background-color: #3e5c2f;
+    
 }
 
-nav a {
+.menu {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
 }
 nav img{
-    height: 60px;
-    margin: 5px;
-}
-
-
-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
-a{
-    margin-top: 50px;
-}
-img{
-    height: 150px;
+    height: 50px;
 }
